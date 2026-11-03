@@ -22,12 +22,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install flet
 
-      - name: Build Android APK via Flet
+      - name: Build Web app bundle
         run: |
-          flet build apk
+          flet build web
 
-      - name: Upload APK Artifact
+      - name: Upload Web Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: TincturesApp-release
-          path: build/apk/*.apk
+          name: TincturesApp-Web
+          path: build/web
