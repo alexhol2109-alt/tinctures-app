@@ -118,7 +118,7 @@ def main(page: ft.Page):
                                         ft.IconButton(
                                             icon=ft.icons.DELETE,
                                             icon_color="red400",
-13:01
+"13:01"
 data=r_id,
                                             on_click=delete_recipe,
                                         ),
