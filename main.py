@@ -239,7 +239,7 @@ data=r_id,
         conn = sqlite3.connect("tinctures_pro.db")
         cursor = conn.cursor()
         cursor.execute("DELETE FROM recipes WHERE id = ?", (r_id,))
-13:01
+"13:01"
 conn.commit()
         conn.close()
         load_recipes()
